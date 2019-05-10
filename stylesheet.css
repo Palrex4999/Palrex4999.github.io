@@ -1,3 +1,930 @@
-.title {
-  color: #02ccba;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro";
+  text-align:center;
+}
+
+header {
+  height:75px;
+  padding:1px;
+  width:100%;
+  max-width: calc(100% -40px);
+  position: fixed;
+  top:0px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+a {
+text-decoration: none;
+color:white;
+}
+
+.logo-image {
+  float:left;
+  padding-top:19px;
+  padding-bottom: 22px;
+  padding-left: 95px;
+}
+
+.logo-text {
+  float:left;
+  font-size:14px;
+  font-weight: 600;
+  padding-top:22px;
+  padding-left: 5px;
+  color:#333;
+}
+
+.head-question {
+  display:block;
+  float:right;
+  font-size:14px;
+  font-weight: 300;
+  padding:12px 41px;
+  margin:14px 90px 0 0;
+  background-color: #da6b64;
+  border-radius: 25px;
+}
+
+.container2 {
+  height:500px;
+  padding:1px; /*全画面*/
+  background-image:url("isara_img/main.jpg");
+  background-size: cover;
+}
+
+.main-title  {
+  height:500px;
+  font-size:28px;
+  line-height:30px;
+  font-weight:600;
+}
+
+.main-title h1{
+  font-size:20px;
+  font-weight:600;
+  padding-top:30px;
+
+}
+
+.question {
+  padding:1px;
+  height:600px;
+  background-color:#ebb94d;
+}
+
+.question p{
+  font-size:21px;
+  font-weight: 600;
+  color:#fff;
+}
+
+.seikyu {
+  display: inline-block;
+  font-size:28px;
+  font-weight: 600;
+  color:#fff;
+  background-color: #da6b64;
+  padding:33px 300px;
+  border-radius:60px;
+  margin: 30px 0 65px 0;
+}
+
+.reco {
+  display: inline-block;
+  font-size:18px;
+  font-weight: 400;
+  background-color: #f9f2f4;
+  color: #da6b64;
+  border-radius:5px;
+}
+
+.introduction {
+  height:588px;
+  background-image:url("isara_img/introbottom.jpg");
+  background-size: cover;
+}
+
+.txt_i1 {
+  padding:50px 0;
+  position:relative;
+}
+.txt_i1::before, .txt_i1::after {position: absolute; content: ""; width:50px; height:50px;}
+
+.txt_i1:before {
+  top:40px;
+  left:245px;
+  border-top:4px solid;
+  border-left:4px solid;
+  color:#ebb94d;
+}
+.txt_1i:after {
+  bottom:40px;
+  right:245px;
+  border-bottom:4px solid;
+  border-right:4px solid;
+  color:#ebb94d;
+}
+.txt_1i h2 {
+  font-size:28px;
+  font-weight: 600;
+}
+
+.txt_i2 p {
+  font-size:20px;
+  font-weight: 300;
+  padding-bottom:20px;
+}
+
+.about1 {
+  height:650px;
+  background-color:#fef5e0;
+  text-align: center;
+}
+
+.txt_a1 {
+  padding:75px 0 20px 0;
+}
+
+.txt_a1 h2 {
+  font-size: 28px;
+  font-weight: 600
+}
+
+.txt_a2 p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skills {
+  height:253px;
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+
+}
+
+.skill_about p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skill_about {
+  padding-top:20px;
+}
+
+.skill {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.skill p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.about2 {
+  padding-top: 1px;
+  height: 440px;
+  background-image:url("isara_img/aboutsecondbg.jpg") ;
+  background-size:cover;
+  text-align: center;
+}
+
+.txt_b1 h2 {
+  padding-top:30px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.txt_b1 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.step {
+  background-color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  width: 27%;
+  margin-right: 10px;
+  margin-top:20px;
+}
+.stepn {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ebb94d;
+  display: inline-block;
+  padding:0 120px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.txtxs {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.txts {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.highlight {
+  color: #ebb94d;
+}
+
+.about3 {
+  padding-top:1px;
+  background-color: #016ea9;
+  height: 145px;
+  text-align: center;
+}
+
+.about3 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 25px;
+}
+
+.learning {
+  text-align: center;
+}
+
+.txtl {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.learning .txtl {
+  padding: 45px 0 30px 0;
+}
+
+.txtm {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.learning .txtm {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.power {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.learning .txts {
+  margin-bottom: 30
+
+
+
+  px;
+}
+
+.merits {
+  height: 1020px;
+  background-color: #fef5e0;
+  text-align: center;
+}
+
+.yellowtxt {
+  color:#ebb94d
+}
+
+.merit {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+}
+
+.merit .txtm {
+  text-align: left;
+}
+
+.merits .txts {
+  font-weight: 300;
+  text-align: left;
+}
+
+.merits .txtl {
+  padding: 40px 0 40px 0;
+}
+
+.merits p {
+  margin: 0.5em 0px;
+}
+
+.support {
+  height:270px;
+  max-width: 87%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.support .txts {
+  text-align: center;
+  font-weight: 600;
+}
+
+.support .txtl {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.support .txtm {
+  padding-top:0px;
+}
+
+.merits .txtxs {
+  font-weight: 300;
+}
+
+.members {
+  padding-top: 1px;
+  height: 1360px;
+  background-image: url("isara_img/teacherbg.jpg");
+  background-size:cover;
+  color: #fff;
+}
+
+.row {
+  padding-top: 200px;
+  margin-left: 310px;
+}
+
+.clear {
+  clear:left;
+}
+.member {
+  width: 35%;
+  float: left;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top:-150px;
+  left:90px;
+}
+
+.icon img {
+  border-radius: 50%;
+}
+
+.name {
+  display: inline-block;
+  border: 3px solid #fff;
+  padding:40px;
+  height: 400px;
+}
+
+.name p {
+  font-weight: 300;
+}
+
+.why {
+  height: 270px;
+  text-align: center;
+  background-color: #ebb94d;
+  color: #fff;
+  position: relative;
+}
+
+.circle2 {
+  font-size: 20px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  color:#ebb94d;
+  background-color: #fff;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.why:after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 25px solid transparent;
+  border-top-color: #ebb94d;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.answers {
+  height: 1080px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.answers img {
+  border:solid;
+  border-color: #ebb94d;
+}
+
+.answers .txtxs {
+  font-weight: 300;
+}
+
+.voice {
+  display: flex;
+  margin-bottom: 30px;
+
+}
+
+.iconn {
+  float: left;
+  padding-left: 250px;
+  padding-right: 30px;
+}
+
+.comment {
+  padding-top: 10px;
+
+}
+
+.comment p {
+  font-style: italic;
+  font-weight: 400;
+  color: #777;
+  text-align: left;
+  font-size: 18px;
+}
+
+.comment small {
+  display: inline-block;
+  margin-top:8px;
+  text-decoration: underline;
+}
+
+.classbox {
+  padding:30px 20%;
+}
+
+.class{
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  background-image: url("isara_img/classbg.jpg");
+  background-position: center;
+  background-size:cover;
+  height: 800px;
+}
+
+.row1 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.classwrap {
+  background-color: #fff;
+  border:2px solid #016ea9;
+  padding:0;
+  border-radius: 5px;
+}
+
+.classlist {
+  float: left;
+  width:50%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.classbox .txtm {
+  background-color: #016ea9;
+  padding:15px;
+  margin: 0 0 10px;
+
+}
+
+.classwrap ul {
+  padding:0;
+  margin:0;
+}
+
+ul {
+  list-style: none;
+}
+
+.classbox ul li {
+  color: #000;
+}
+
+.class ul li {
+  padding:10px;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+.classbottom {
+  height:145px;
+  background-color: #016ea9;
+  padding: 40px 0;
+  color:#fff;
+  text-align: center;
+}
+
+.classbottom .txtm {
+  margin: 0;
+}
+
+.flow {
+  height:1830px;
+  padding:20px 40px;
+  text-align: center;
+}
+
+.flowimg {
+  width: 80%;
+  margin:40px auto;
+}
+
+.flowbox {
+  width:1170px;
+  max-width: calc(100%-40px);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px 35px;
+  background-color: #fef5e0;
+  overflow: hidden;
+}
+
+.flowbox p {
+  margin: 20px 0;
+}
+
+.flowbox:nth-child(3) > .flowleft {
+  margin-top: 40px;
+}
+
+.flowleft {
+  float: left;
+  padding: 20px;
+  width:200px;
+}
+
+.flowleft .txtm {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.flowright {
+  text-align: left;
+  padding: 10px 0 0;
+}
+
+.flowright .txtxs {
+  font-weight: 300;
+}
+
+.flowline {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bangkok {
+  background-image: url("isara_img/bangkokbg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding:80px 80px;
+  color: #fff;
+  text-align: left;
+}
+
+.bangkoktxt {
+  width:1170px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.bangkoktxt .txtl {
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.bangkoklist {
+  margin: 20px 0;
+}
+
+.special {
+  background-position: center calc(100% - -11px);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  text-align: center;
+  background-color: #f7c23c;
+  padding: 40px 0;
+}
+
+.special h2 {
+  margin-bottom: 40px;
+}
+
+.specialpeople {
+  position: relative;
+  bottom:-58px;
+  width: 45%;
+  background-color: #f7c23c;
+  margin:0 auto;
+}
+
+.specialbox {
+  margin-top: 40px;
+  padding: 40px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.specialpc {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.splist {
+  width: 33.3333333%;
+  float: left;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.tokuten {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  padding: 0;
+  margin:10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.tokuten .tokutenbox {
+  padding: 15px;
+  height: 250px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tokuten .txts {
+  font-size: 14px;
+}
+
+.whitetxt {
+  color: #fff;
+}
+
+.tokutenbox .txtm {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.specialdetail {
+  padding:40px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url("isara_img/specialdetail.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.specialdetail .txtl {
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.specialdetail .txtm {
+  margin-bottom: 40px;
+}
+
+.whitebrackets {
+  margin: 0 auto;
+  position: relative;
+  width:860px;
+  max-width: calc(100% - 40px);
+  padding: 15px 30px;
+}
+
+.whitebrackets::before {
+  top:0;
+  left:0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+
+.whitebrackets::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+.whitebrackets::before,
+.whitebrackets::after {
+  position: absolute;
+  content:"";
+  width:50px;
+  height: 50px;
+
+}
+
+.message {
+  text-align: center;
+  padding:40px 0;
+  overflow: hidden;
+}
+
+.message .txtm {
+  font-weight: 700;
+}
+
+.messagecon{
+ margin: 0 auto;
+ width:70%;
+}
+
+.row2 {
+  overflow: hidden;
+}
+
+.learningbox1 {
+
+}
+
+.learningbox2 {
+  text-align: left;
+  margin-left: 230px;
+  width:80%;
+}
+
+.learningbox2 p {
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.img-res {
+  float:left;
+}
+
+.contactform {
+  background-color: #ebb94d;
+  padding:40px 20%;
+  text-align: center;
+}
+
+.contactform .txtl {
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+form#OF_form1 {
+  width: 100%;
+  text-align: center;
+}
+
+#OF_form1 {
+  width: 550px;
+  text-align: center;
+}
+
+#OF_form1 textarea {
+  width: 355px;
+  height: 100px;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+form#OF_form1 input {
+  width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border:none;
+}
+
+form#OF_form1 textarea {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+/*button,input,textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+} */
+
+form#OF_form1 textarea {
+  height: 100px;
+}
+
+#OF_form1 input#OF_submit_btn1 {
+  background-color: #da6b64;
+  color: #fff;
+  padding:10px 80px;
+  border-radius: 50px;
+  font-size: 23px;
+  font-weight: 600;
+  border:none;
+}
+
+#OF_form1 input.OF_submit_btn1 {
+  display: block;
+  margin:10px auto;
+  font-size: 16px;
+  padding:5px;
+}
+
+#OF_form1 textarea {
+  width:335px;
+  height: 100px;
+}
+
+.questions {
+  padding:40px 10%;
+  text-align: center;
+}
+
+.questions .txtl {
+  margin-bottom: 40px;
+}
+
+.questionlist {
+  width:1170px;
+  max-width: calc(100% - 40px);
+  margin:0 auto;
+  text-align: left;
+}
+
+.panel-group {
+  margin-bottom: 20px;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
+.panel-default {
+  border:none;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.questionheading {
+  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #e5e5e5;
+}
+
+.footerwrap {
+  position: relative;
+  padding:40px 15px 20px 15px;
+  background-color: #ececec;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 5px;
 }
